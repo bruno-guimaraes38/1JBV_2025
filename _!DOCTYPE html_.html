@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manejo Certo - Gestão Inteligente de Haras</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cloudflare.com">
+</head>
+<body>
+<div class="sidebar">
+<div class="sidebar-brand">
+<i class="fa-solid fa-horse"></i>
+<h2>Manejo<span>Certo</span></h2>
+</div>
+<div class="sidebar-menu">
+<ul>
+<li>
+<a href="#" class="menu-link active" data-target="dashboard-section">
+<i class="fa-solid fa-chart-line"></i> <span>Dashboard</span>
+</a>
+</li>
+<li>
+<a href="#" class="menu-link" data-target="cavalos-section">
+<i class="fa-solid fa-horse-head"></i> <span>Meus Cavalos</span>
+</a>
+</li>
+<li>
+<a href="#" class="menu-link" data-target="financeiro-section">
+<i class="fa-solid fa-wallet"></i> <span>Planilhas & Custos</span>
+</a>
+</li>
+<li>
+<a href="#" class="menu-link" data-target="perfil-section">
+<i class="fa-solid fa-user-gear"></i> <span>Perfil do Haras</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="main-content">
+<header class="topbar">
+<div class="toggle-sidebar" id="toggle-btn">
+<i class="fa-solid fa-bars"></i>
+</div>
+<div class="user-wrapper">
+<img src="https://unsplash.com" width="40px" height="40px" alt="Foto de Perfil" id="topbar-avatar">
+<div>
+<h4 id="topbar-name">Haras Vista Alegre</h4>
+<small>Administrador</small>
+</div>
+</div>
+</header>
+<main class="container">
+<section id="dashboard-section" class="content-section active-section">
+<div class="summary-grid">
+<div class="summary-card">
+<div class="card-body">
+<i class="fa-solid fa-horse card-icon"></i>
+<div>
+<h3>Animais Ativos</h3>
+<div class="value" id="count-horses">03</div>
+</div>
+</div>
+</div>
+<div class="summary-card alert-card">
+<div class="card-body">
+<i class="fa-solid fa-triangle-exclamation card-icon"></i>
+<div>
+<h3>Alertas da Semana</h3>
+<div class="value">02</div>
+</div>
+</div>
+</div>
+<div class="summary-card money-card">
+<div class="card-body">
+<i class="fa-solid fa-dollar-sign card-icon"></i>
+<div>
+<h3>Gasto Mensal (Maio)</h3>
+<div class="value" id="total-may">R$ 0,00</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content-layout">
+<div class="left-column">
+<div class="section-block">
+<div class="block-header">
+<h2>Plantel de Cavalos</h2>
+<button class="btn-primary" onclick="switchTab('cavalos-section')">Ver Todos</button>
+</div>
+<div class="horse-list-preview">
+<div class="horse-card" onclick="openHorseProfile('Apollo Crimson')">
+<div class="horse-avatar">🐴</div>
+<div class="horse-info">
+<h4>Apollo Crimson</h4>
+<p>Quarto de Milha • 5 anos • Baio</p>
+</div>
+<i class="fa-solid fa-chevron-right arrow-detail"></i>
+</div>
+<div class="horse-card" onclick="openHorseProfile('Dona da Noite')">
+<div class="horse-avatar">🐴</div>
+<div class="horse-info">
+<h4>Dona da Noite</h4>
+<p>Crioulo • 8 anos • Zaina</p>
+</div>
+<i class="fa-solid fa-chevron-right arrow-detail"></i>
+</div>
+</div>
+</div>
+</div>
+<div class="right-column">
+<div class="section-block">
+<h2>Alertas Urgentes</h2>
+<ul class="agenda-list">
+<li class="agenda-item urgent">
+<span class="agenda-date"><i class="fa-regular fa-clock"></i> Amanhã</span>
+<span class="agenda-desc">Casqueamento (Dona da Noite)</span>
+</li>
+<li class="agenda-item">
+<span class="agenda-date"><i class="fa-regular fa-calendar"></i> 24/05</span>
+<span class="agenda-desc">Reforço de Vacina (Apollo)</span>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section id="cavalos-section" class="content-section">
+<div id="plantel-list-view" class="section-block">
+<h2>Gerenciamento do Plantel</h2>
+<div class="horse-card" onclick="openHorseProfile('Apollo Crimson')">
+<div class="horse-avatar">🐴</div>
+<div class="horse-info">
+<h4>Apollo Crimson</h4>
+<p>Quarto de Milha • Baio</p>
+</div>
+<button class="btn-view">Ficha Técnica</button>
+</div>
+</div>
+<div id="ficha-individual-view" class="section-block horse-profile-page" style="display: none;">
+<button class="btn-secondary" onclick="closeHorseProfile()">
+<i class="fa-solid fa-arrow-left"></i> Voltar ao Plantel
+</button>
+<div class="profile-header">
+<div class="profile-avatar">🐴</div>
+<div class="profile-title">
+<h2 id="view-horse-name">Apollo Crimson</h2>
+<p id="view-horse-details">Raça: Quarto de Milha | Idade: 5 anos | Pelagem: Baio</p>
+</div>
+</div>
+<div class="profile-grid">
+<div class="info-box">
+<h3><i class="fa-solid fa-wheat-awn"></i> Horário do Trato</h3>
+<table class="data-table">
+<thead>
+<tr>
+<th>Horário</th>
+<th>Alimento</th>
+<th>Qtd</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>06:00</td>
+<td>Ração Coudelaria</td>
+<td>1.5 kg</td>
+</tr>
+<tr>
+<td>17:00</td>
+<td>Ração + Suplemento</td>
+<td>1.5 kg</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="info-box">
+<h3><i class="fa-solid fa-gauge-high"></i> Rotina de Trabalho</h3>
+<p style="padding: 10px; color: var(--text-muted);">Treino leve de rédeas de terça a quinta.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="financeiro-section" class="content-section">
+<div class="section-block">
+<h2>Planilhas & Custos Mensais</h2>
+<div class="table-responsive" style="margin-top: 20px;">
+<table class="data-table">
+<thead>
+<tr>
+<th>Cavalo</th>
+<th>Mês</th>
+<th>Custo Base</th>
+<th>Extras</th>
+<th>Total</th>
+<th>Status</th>
+<th>Ações</th>
+</tr>
+</thead>
+<tbody id="finance-table-body">
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<section id="perfil-section" class="content-section">
+<div class="section-block">
+<h2>Configurações do Haras</h2>
+<form id="profile-form" class="modern-form" style="margin-top: 20px;">
+<div class="form-group">
+<label for="haras-name">Nome do Haras</label>
+<input type="text" id="haras-name" value="Haras Vista Alegre" required>
+</div>
+<div class="form-group">
+<label for="haras-owner">Nome do Proprietário / Administrador</label>
+<input type="text" id="haras-owner" value="Administrador">
+</div>
+<div class="form-group">
+<label for="haras-avatar-url">URL da Foto de Perfil</label>
+<input type="url" id="haras-avatar-url" value="https://unsplash.com">
+</div>
+<button type="submit" class="btn-primary">Salvar Alterações</button>
+</form>
+</div>
+</section>
+</main>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
