@@ -3,190 +3,238 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TriCine - Sinopses de Filmes</title>
+    <title>Manejo Certo - Gestão Inteligente de Haras</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
- <section id="terror">
-        <div class="faixa">TriCine </div>
-        <h1>Filmes de Terror</h1>
-        <div>
-            <b>Invocação do Mal</b>
-            <p>Baseado em fatos reais, o filme acompanha os investigadores paranormais Ed e Lorraine Warren enquanto ajudam uma família aterrorizada por uma presença sombria em sua fazenda.</p>
-            <p>O medo cresce conforme os fenômenos se intensificam, culminando em um dos casos mais assustadores dos arquivos dos Warren.</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG2rb3Kjb106abK0tD-y51afytdCp1ZMs23A&s" alt="Invocação do Mal">
-        </div>
-        <div>
-            <b>O Exorcista</b>
-            <p>Quando uma jovem começa a apresentar comportamentos estranhos e violentos, sua mãe busca ajuda de dois padres para realizar um exorcismo.</p>
-            <p>Um clássico do terror que marcou gerações com cenas intensas e atmosfera perturbadora.</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSz9C0S-zA7e27EsYIE4D83A5s6ahZqETaBWQ&s" alt="O Exorcista">
-        </div>
-        <div>
-            <b>It: A Coisa</b>
-            <p>Um grupo de crianças enfrenta seus maiores medos ao encarar uma entidade maléfica que assume a forma de um palhaço.</p>
-            <p>Com coragem e amizade, eles descobrem o poder de superar o terror juntos.</p>
-            <img src="https://br.web.img3.acsta.net/pictures/17/03/30/22/44/345288.jpg" alt="It: A Coisa">
-        </div>
-        <div>
-            <b>Sobrenatural</b>
-            <p> Uma família começa a presenciar eventos paranormais após o filho entrar em coma. Eles descobrem que ele está preso em uma dimensão sombria habitada por espíritos malignos. Para salvá-lo, precisam enfrentar forças além da compreensão humana.</p>
-   <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQ-KMODvqbUf2RpTBBMlWNSohZWpmcauP2bA&s"/>
-</div>  
-<div>
-    <b> A bruxa</b>
-<p>No século XVII, uma família puritana é exilada e passa a viver isolada na floresta. Estranhos acontecimentos alimentam o medo e a suspeita de bruxaria. A tensão cresce até que o mal se revela de forma assustadora.</p>
-<img src="https://br.web.img3.acsta.net/pictures/16/02/02/11/51/346769.jpg">
-</div>   
-<div>
-    <b> O exorcista do papa</b>
-    <p>O padre Gabriele Amorth, exorcista do Vaticano, enfrenta um caso de possessão que desafia sua fé e razão. Ao investigar, descobre uma conspiração sombria ligada à própria Igreja. Uma batalha espiritual intensa se inicia.</p>
-    <img src="https://www.sonypictures.com.br/sites/brazil/files/2023-05/EP_Sony_1400x2100.jpg">
-</div>  
-</section>
 
-    <section id="ação">
-        <h1>Filmes de Ação</h1>
-        <div>
-            <b>John Wick</b>
-            <p>Um ex-assassino busca vingança contra aqueles que destruíram o pouco de paz que restava em sua vida.</p>
-            <p>Com coreografias intensas e estilo visual marcante, John Wick redefine o gênero de ação moderna.</p>
-            <img src="https://media.fstatic.com/dAa0gs70U_j38mspI0YrUKd-jTQ=/full-fit-in/629x300/media/articles/main/2019/02/21/5d4519ca-cb0e-4e76-81ac-6d5f5db29ebc-1779197288.jpg">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <i class="fa-solid fa-horse"></i>
+            <h2>Manejo<span>Certo</span></h2>
         </div>
-        <div>
-            <b>Missão Impossível: Efeito Fallout</b>
-            <p>Ethan Hunt retorna para mais uma missão perigosa, tentando impedir um desastre global.</p>
-            <p>Com cenas de ação eletrizantes e acrobacias reais, o filme é um espetáculo de adrenalina.</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt2NfZx1vw4bPLP_5AUOE7e6ZpfEDIUJg8Ni-c3mPhNla18_iKiHTuXURu5_gGqn9bCKw&usqp=CAU">
+        <div class="sidebar-menu">
+            <ul>
+                <li><a href="#" class="menu-link active" data-target="dashboard-section"><i class="fa-solid fa-chart-line"></i> <span>Dashboard</span></a></li>
+                <li><a href="#" class="menu-link" data-target="cavalos-section"><i class="fa-solid fa-horse-head"></i> <span>Meus Cavalos</span></a></li>
+                <li><a href="#" class="menu-link" data-target="financeiro-section"><i class="fa-solid fa-wallet"></i> <span>Planilhas & Custos</span></a></li>
+                <li><a href="#" class="menu-link" data-target="perfil-section"><i class="fa-solid fa-user-gear"></i> <span>Perfil do Haras</span></a></li>
+            </ul>
         </div>
-        <div>
-            <b> Godzilla 2 Rei dos monstros</b>
-            <p>Membros da agência Monarch enfrentam monstros gigantescos, incluindo o poderoso Godzilla, que entra em choque com Mothra, Rodan e seu maior inimigo, King Ghidorah, o monstro de três cabeças. Essas antigas superespécies disputam a supremacia, deixando a própria existência da humanidade em risco.</p>
-        <img src="https://br.web.img3.acsta.net/pictures/19/04/18/19/03/2204946.jpg">
-        </div>
-        <div>
-            <b> Velozes e furiosos 10</b>
-        <p>Dom Toretto e sua família precisam lidar com o adversário mais letal que já enfrentaram. Alimentada pela vingança, uma ameaça terrível emerge das sombras do passado para destruir o mundo de Dom e todos que ele ama.
-</p>
-<img src="https://m.media-amazon.com/images/S/pv-target-images/848a155842f8331062bd190b1584e3b152af0271468312ce6b0def838721592b.jpg">
-        </div>
-        <div>
-            <b> Homem-Aranha: sem volta pra casa</b>
-            <p>Peter Parker tem a sua identidade secreta revelada e pede ajuda ao Doutor Estranho. Quando o feitiço para reverter o evento não sai como esperado, o Homem-Aranha e o seu companheiro dos Vingadores precisam enfrentar inimigos de todo o multiverso.</p>
-        <img src="https://www.sonypictures.com.br/sites/brazil/files/2022-03/KEY%20ART_SPIDER%20NO%20WAY%20HOME.JPG">
-        </div>
-        <div>
-            <b> Farejando a vingança</b>
-            <p>Após perder a filha em um crime brutal, um ex-policial decide fazer justiça com as próprias mãos. Ele se infiltra no submundo para encontrar os culpados. Sua busca o leva a confrontar tanto criminosos quanto sua própria dor.</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHUb4lW7939KtK5dnQ5ao4ArzLiDhThWwCbA&s">
-        </div>
-    </section>
-
-    <section id="aventura">
-        <h1>Filmes de Aventura</h1>
-        <div>
-            <b>Jurassic Park</b>
-            <p>Um parque temático com dinossauros clonados sai do controle, colocando todos os visitantes em perigo.</p>
-            <p>Uma aventura épica que mistura ficção científica e emoção em um cenário impressionante.</p>
-            <img src="https://universosagas.ig.com.br/wp-content/uploads/2024/02/Jurassic-Park.png">
-        </div>
-        <div>
-            <b> Rio</b>
-            <p>Capturada por contrabandistas de animais quando tinha acabado de nascer, a arara Blu nunca aprendeu a voar e vive uma vida domesticada feliz em Minnesota, nos Estados Unidos, com sua dona, Linda. Blu pensa que é a última arara de sua espécie. Mas quando descobrem que Jewel, uma fêmea, vive no Rio de Janeiro, Blu e Linda vão ao seu encontro. Os contrabandistas capturam Blu e Jewel, mas as aves escapam e começam uma aventura arriscada rumo à liberdade.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/0/09/Rio_poster.jpg/250px-Rio_poster.jpg">
-        </div>
-        <div>
-            <b> Por água a baixo</b>
-            <p>Uma equipe de mergulhadores fica presa em cavernas submersas após um acidente durante uma expedição. Com o oxigênio acabando, lutam pela sobrevivência. O medo e o desespero aumentam à medida que a esperança diminui.</p>
-<img src="https://www.papodecinema.com.br/wp-content/uploads/2012/05/20181119-por-agua-abaixo-dvd-filme-infantil-d_nq_np_967514-mlb25979279216_092017-f-234x300.webp">
-        </div>
-        <div>
-            <b> Avatar</b>
-        <p>No exuberante mundo alienígena de Pandora vivem os Na'vi, seres que parecem ser primitivos, mas são altamente evoluídos. Como o ambiente do planeta é tóxico, foram criados os avatares, corpos biológicos controlados pela mente humana que se movimentam livremente em Pandora. Jake Sully, um ex-fuzileiro naval paralítico, volta a andar através de um avatar e se apaixona por uma Na'vi. Esta paixão leva Jake a lutar pela sobrevivência de Pandora.</p>
-        <img src="https://upload.wikimedia.org/wikipedia/pt/thumb/b/b0/Avatar-Teaser-Poster.jpg/250px-Avatar-Teaser-Poster.jpg">
-        </div>
-        <div>
-            <b> Interestelar</b>
-        <p>As reservas naturais da Terra estão chegando ao fim e um grupo de astronautas recebe a missão de verificar possíveis planetas para receberem a população mundial, possibilitando a continuação da espécie. Cooper é chamado para liderar o grupo e aceita a missão sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e Doyle, ele seguirá em busca de um novo lar.</p>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTx221jSSJNgI6Y-Ss9zzgmq1aBDU0ERzz7Nw&s">    
     </div>
-    <div>
-        <b> Procurando Nemo</b>
-        <p>Quando o pequeno Nemo é capturado por um mergulhador, seu pai, Marlin, parte em uma jornada pelo oceano para resgatá-lo. Acompanhado da divertida Dory, ele enfrenta desafios e aprende o verdadeiro significado da coragem.</p>
-    <img src="https://image.tmdb.org/t/p/original/djbivExXSZb0sTO8uYaaQC5vMRM.jpg">
-    </div>
-    </section>
 
-    <section id="romance">
-        <h1>Filmes de Romance</h1>
-        <div>
-            <b>Titanic</b>
-            <p>Durante a viagem inaugural do Titanic, Jack e Rose vivem um amor intenso, apesar das diferenças sociais. Quando o navio colide com um iceberg, eles lutam pela sobrevivência. Uma história épica de paixão e tragédia.</p>
-            <p>Um romance trágico e inesquecível que marcou o cinema com emoção e grandiosidade.</p>
-            <img src="https://cdn.kinocheck.com/i/su2fj7r455.jpg">
-        <div>
-            <b> Como eu era antes de você</b>
-            <p>Louisa começa a cuidar de Will, um homem paraplégico e amargurado. Com o tempo, surge entre eles um amor improvável que transforma suas vidas. Mas uma difícil decisão colocará esse sentimento à prova.</p>
-            <img src="https://play-lh.googleusercontent.com/JQKfopRtWqyD1cUXjx4V00qLnKecgKlSTS6sL0YX1T0H4bzyOK8SxdQIUbZ6NTsKfkBm">
-        </div>
-        <div>
-            <b> Crepúsculo</b>
-            <p>A estudante Bella Swan conhece Edward Cullen, um belo mas misterioso adolescente. Edward é um vampiro, cuja família não bebe sangue, e Bella, longe de ficar assustada, se envolve em um romance perigoso com sua alma gêmea imortal.</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLTIP9ZjQ0YGyykiadI19D9TJXZfFpjfKA9A&s">
-        </div>
-        <div>
-            <b>Para todos os garotos que já amei</b>
-            <p>Lara Jean Song Covey escreve cartas de amor secretas para todos os seus antigos paqueras. Um dia, as cartas são misteriosamente enviadas para os destinatários, virando sua vida de cabeça para baixo.</p>
-        <img src="https://pt.quizur.com/_image?href=https://img.quizur.com/f/img5e4347deee6f78.43471549.jpeg?lastEdited=1581467633&w=1024&h=1024&f=webp">
-        </div>
-        <div>
-            <b> Continência a o amor</b>
-            <p>Uma musicista e um soldado se casam por conveniência, mas o amor verdadeiro acaba surgindo. Separados pela guerra e pelas diferenças, precisam lutar para manter a relação viva. Um romance sobre fé e superação.</p>
-            <img src="https://br.web.img3.acsta.net/pictures/22/08/09/21/09/3949781.jpg">
-        </div>
-        <div>
-            <b> A barraca do beijo</b>
-<p>Elle se apaixona pelo irmão de seu melhor amigo, quebrando uma das regras da amizade. Entre segredos, paixões e confusões, ela precisa escolher entre o amor e a lealdade. Um romance divertido e cheio de emoções adolescentes.</p>
-<img src="https://image.tmdb.org/t/p/original/8TbFTREtgpTOMpxQ5ZJjiZIlVS1.jpg">
-        </div>
-    </section>
-
-
-    <section id="comedia">
-        <h1>Filmes de Comédia</h1>
-        <div>
-            <b>As Branquelas</b>
-            <p>Dois agentes do FBI se disfarçam de socialites brancas para resolver um caso de sequestro.</p>
-            <p>O disfarce causa situações hilárias e momentos inesquecíveis de comédia.</p>
-            <img src="https://filmesempauta2021.wordpress.com/wp-content/uploads/2022/01/as-branquelas.jpg">
-        </div>
-        <div>
-            <b> Jumanji: bem-vindo a selva</b>
-            <p>Quatro adolescentes encontram um videogame cuja ação se passa em uma floresta tropical. Empolgados com o jogo, eles escolhem seus avatares para o desafio, mas um evento inesperado faz com que eles sejam transportados para dentro do universo fictício, transformando-os nos personagens da aventura.</p>
-<img src="https://static.wikia.nocookie.net/dublagem/images/5/5c/Bem_vindo_a_selva.jpeg/revision/latest?cb=20241008040937&path-prefix=pt-br">
-        </div>
-        <div>
-            <b> Miha vida em marte</b>
-            <p>Fernanda está casada com Tom, com quem tem uma filha de cinco anos, Joana. O casal está em meio ao desgaste causado pelo convívio de muitos anos, o que gera atritos constantes. Quem ajuda Fernanda a superar a crise é seu sócio Aníbal, parceiro inseparável durante a árdua jornada entre salvar o casamento ou colocar um fim nele.</p>
-            <img src="https://wp.ufpel.edu.br/empauta/files/2018/12/MinhaVidaMarte.ret_.jpg">
-        </div>
-        <div>
-            <b> Minha mãe é uma peça</b>
-            <p>Dona Hermínia é uma senhora de meia-idade, divorciada do marido, que a trocou por uma mulher mais jovem. Hiperativa, ela não larga do pé de seus filhos, Marcelina e Juliano. Um dia, após descobrir que eles a consideram chata, ela resolve sair de casa sem avisar ninguém, deixando todos preocupados. Dona Hermínia decide visitar a querida tia Zélia para desabafar suas tristezas atuais e recordar os bons tempos do passado.</p>      
-        <img src="https://pt.quizur.com/_image?href=https://static.quizur.com/i/b/58feae6ee38503.42918463minha-mae-e-uma-peca.jpg&w=600&h=600&f=webp">
-        </div>
-        <div>
-            <b> Ted</b>
-            <p>Quando criança, John desejou que seu ursinho Ted ganhasse vida e, surpreendentemente, foi atendido. Porém, agora que é adulto, ele precisa lidar com as consequências de seu pedido, já que Ted não vai parar de atormentar a sua vida.</p>
-            <img src="https://upload.wikimedia.org/wikipedia/pt/1/11/Ted-poster.jpg">
-        </div>
-        <div>
-            <b> O candidato honesto</b>
-            <p>João Ernesto conquista grande popularidade como presidente do Sindicato dos Motoristas de Ônibus. Um político corrupto, ele se candidata à Presidência da República. À frente nas pesquisas, João recebe uma feitiço da avó e não consegue mais mentir.</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRMe8Fwr9yFVmUDZCPptWwWpbdf1quJ2uFqg&s">
+    <div class="main-content">
+        
+        <header class="topbar">
+            <div class="toggle-sidebar" id="toggle-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="user-wrapper">
+                <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80" width="40px" height="40px" alt="Foto de Perfil" id="topbar-avatar">
+                <div>
+                    <h4 id="topbar-name">Haras Vista Alegre</h4>
+                    <small>Administrador</small>
                 </div>
-    </section>
+            </div>
+        </header>
 
+        <main class="container">
+            
+            <section id="dashboard-section" class="content-section active-section">
+                
+                <div class="dashboard-banner">
+                    <img src="https://images.unsplash.com/photo-1599623560574-39d485900c95?auto=format&fit=crop&w=1200&q=80" alt="Cavalos no Haras" class="theme-img-large">
+                    <div class="banner-overlay">
+                        <h1>Gestão Inteligente na Palma da Mão</h1>
+                        <p>Controle o trato, treinos e finanças do seu plantel com eficiência.</p>
+                    </div>
+                </div>
+
+                <div class="summary-grid">
+                    <div class="summary-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-horse card-icon"></i>
+                            <div>
+                                <h3>Animais Ativos</h3>
+                                <div class="value" id="count-horses">03</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-card alert-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-triangle-exclamation card-icon"></i>
+                            <div>
+                                <h3>Alertas da Semana</h3>
+                                <div class="value">02</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="summary-card money-card">
+                        <div class="card-body">
+                            <i class="fa-solid fa-dollar-sign card-icon"></i>
+                            <div>
+                                <h3>Gasto Mensal (Maio)</h3>
+                                <div class="value" id="total-may">R$ 1.420,00</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="content-layout">
+                    <div class="left-column">
+                        <div class="section-block">
+                            <div class="block-header">
+                                <h2>Plantel de Cavalos</h2>
+                                <button class="btn-primary" onclick="switchTab('cavalos-section')">Ver Todos</button>
+                            </div>
+                            
+                            <div class="horse-list-preview">
+                                <div class="horse-card" onclick="openHorseProfile('Apollo Crimson')">
+                                    <div class="horse-avatar">🐴</div>
+                                    <div class="horse-info">
+                                        <h4>Apollo Crimson</h4>
+                                        <p>Quarto de Milha • 5 anos • Baio</p>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right arrow-detail"></i>
+                                </div>
+                                <div class="horse-card" onclick="openHorseProfile('Dona da Noite')">
+                                    <div class="horse-avatar">🐴</div>
+                                    <div class="horse-info">
+                                        <h4>Dona da Noite</h4>
+                                        <p>Crioulo • 8 anos • Zaina</p>
+                                    </div>
+                                    <i class="fa-solid fa-chevron-right arrow-detail"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right-column">
+                        <div class="section-block">
+                            <h2>Alertas Urgentes</h2>
+                            <ul class="agenda-list">
+                                <li class="agenda-item urgent">
+                                    <span class="agenda-date"><i class="fa-regular fa-clock"></i> Amanhã</span>
+                                    <span class="agenda-desc">Casqueamento (Dona da Noite)</span>
+                                </li>
+                                <li class="agenda-item">
+                                    <span class="agenda-date"><i class="fa-regular fa-calendar"></i> 24/05</span>
+                                    <span class="agenda-desc">Reforço de Vacina (Apollo)</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="cavalos-section" class="content-section">
+                <div id="plantel-list-view" class="section-block">
+                    <h2>Gerenciamento do Plantel</h2>
+                    <div class="horse-card" onclick="openHorseProfile('Apollo Crimson')">
+                        <div class="horse-avatar">🐴</div>
+                        <div class="horse-info"><h4>Apollo Crimson</h4><p>Quarto de Milha • Baio</p></div>
+                        <button class="btn-view">Ficha Técnica</button>
+                    </div>
+                </div>
+
+                <div id="ficha-individual-view" class="section-block horse-profile-page" style="display: none;">
+                    <button class="btn-secondary" onclick="closeHorseProfile()"><i class="fa-solid fa-arrow-left"></i> Voltar ao Plantel</button>
+                    
+                    <div class="profile-header">
+                        <div class="profile-avatar-container">
+                            <img src="https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?auto=format&fit=crop&w=150&q=80" alt="Foto do Cavalo" class="horse-profile-img">
+                        </div>
+                        <div class="profile-title">
+                            <h2 id="view-horse-name">Apollo Crimson</h2>
+                            <p id="view-horse-details">Raça: Quarto de Milha | Idade: 5 anos | Pelagem: Baio</p>
+                        </div>
+                    </div>
+
+                    <div class="profile-grid">
+                        <div class="info-box">
+                            <h3><i class="fa-solid fa-wheat-awn"></i> Horário do Trato</h3>
+                            <table class="data-table">
+                                <thead><tr><th>Horário</th><th>Alimento</th><th>Qtd</th></tr></thead>
+                                <tbody>
+                                    <tr><td>06:00</td><td>Ração Coudelaria</td><td>1.5 kg</td></tr>
+                                    <tr><td>17:00</td><td>Ração + Suplemento</td><td>1.5 kg</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="info-box">
+                            <h3><i class="fa-solid fa-gauge-high"></i> Rotina de Trabalho</h3>
+                            <div class="week-schedule">
+                                <span class="day-badge active">Seg: Treino Técnico</span>
+                                <span class="day-badge rest">Qua: Descanso</span>
+                            </div>
+                        </div>
+
+                        <div class="info-box wide-box">
+                            <h3><i class="fa-solid fa-file-invoice-dollar"></i> Custos Individuais do Animal</h3>
+                            <table class="data-table" id="table-individual-payments">
+                                <thead>
+                                    <tr><th>Mês/Ano</th><th>Baia Base</th><th>Extras</th><th>Total</th><th>Status</th></tr>
+                                </thead>
+                                <tbody>
+                                    </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="financeiro-section" class="content-section">
+                <div class="section-block">
+                    <div class="block-header">
+                        <h2><i class="fa-solid fa-table"></i> Planilha de Mensalidades Integrada</h2>
+                        <button class="btn-primary" onclick="openAddExpenseModal()"><i class="fa-solid fa-plus"></i> Lançar Custo Extra</button>
+                    </div>
+                    <div class="table-responsive">
+                        <table class="data-table main-payment-table" id="matrix-finance-table">
+                            <thead>
+                                <tr>
+                                    <th>Cavalo</th>
+                                    <th>Mês/Ano</th>
+                                    <th>Valor Base</th>
+                                    <th>Custos Extras</th>
+                                    <th>Total Geral</th>
+                                    <th>Status</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody id="finance-table-body">
+                                </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section id="perfil-section" class="content-section">
+                <div class="section-block">
+                    <h2><i class="fa-solid fa-id-card"></i> Configurações do Perfil do Haras</h2>
+                    <form id="profile-form" class="modern-form">
+                        <div class="form-group">
+                            <label for="haras-name">Nome do Haras / Centro Hípico:</label>
+                            <input type="text" id="haras-name" value="Haras Vista Alegre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="haras-owner">Proprietário / Gestor:</label>
+                            <input type="text" id="haras-owner" value="Carlos Eduardo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="haras-avatar-url">URL da Foto de Perfil:</label>
+                            <input type="url" id="haras-avatar-url" value="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=100&q=80">
+                        </div>
+                        <button type="submit" class="btn-primary"><i class="fa-solid fa-floppy-disk"></i> Salvar e Atualizar Informações</button>
+                    </form>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
 </body>
-
 </html>
